@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>K1 — رسّام ومصمّم أغلفة كتب</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-10%20-10%20220%20220%22%3E%3Crect%20x%3D%22-10%22%20y%3D%22-10%22%20width%3D%22220%22%20height%3D%22220%22%20rx%3D%2240%22%20fill%3D%22%230f0d0b%22/%3E%3Cdefs%3E%3Cmask%20id%3D%22f%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M122%2C36%20L88.5%2C77%22%20stroke%3D%22%23000%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2287%22%20cy%3D%2279%22%20r%3D%224.6%22%20fill%3D%22%23000%22/%3E%3C/mask%3E%3C/defs%3E%3Crect%20x%3D%2238%22%20y%3D%2240%22%20width%3D%2222%22%20height%3D%22120%22%20rx%3D%222%22%20fill%3D%22%23f3ead8%22/%3E%3Cpolygon%20points%3D%2260%2C104%2074%2C91%20118%2C160%2092%2C160%22%20fill%3D%22%23f3ead8%22/%3E%3Cpath%20d%3D%22M62.1%2C90.6%20L77.2%2C66.3%20L122%2C36%20L96.6%2C83.7%20L73.9%2C101.4%20Z%22%20fill%3D%22%23d9a95b%22%20mask%3D%22url%28%23f%29%22/%3E%3Cpolygon%20points%3D%22128%2C64%20146%2C40%20168%2C40%20168%2C160%20146%2C160%20146%2C70%22%20fill%3D%22%23f3ead8%22/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Reem+Kufi:wght@500;600;700&family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">
@@ -33,6 +34,9 @@ h1,h2,h3{font-family:"Reem Kufi",sans-serif;font-weight:600;line-height:1.3}
 .nav.solid{background:rgba(15,13,11,.96);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
 .logo{font-family:"Reem Kufi",sans-serif;font-weight:700;font-size:1.7rem;color:var(--gold-2);letter-spacing:.02em}
+.nav .logo svg{height:30px;width:auto;display:block}
+footer .logo svg{height:64px;width:auto;margin:0 auto 6px;display:block}
+.avatar svg{width:58%;height:auto}
 .nav ul{display:flex;gap:28px;list-style:none;font-size:.95rem;color:var(--muted)}
 .nav ul a:hover{color:var(--paper)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.98rem;cursor:pointer;border:0;font-family:inherit;transition:transform .2s,box-shadow .2s,background .2s}
@@ -249,7 +253,7 @@ const SITE = {
 
 <nav class="nav" id="nav">
   <div class="wrap">
-    <a href="#top" class="logo" data-f="name"></a>
+    <a href="#top" class="logo" aria-label="K1"><svg viewBox="30 28 146 140" xmlns="http://www.w3.org/2000/svg"><defs><mask id="n"><rect width="200" height="200" fill="#fff"/><path d="M122,36 L88.5,77" stroke="#000" stroke-width="2.6" stroke-linecap="round"/><circle cx="87" cy="79" r="4.6" fill="#000"/></mask></defs><rect x="38" y="40" width="22" height="120" rx="2" fill="#f3ead8"/><polygon points="60,104 74,91 118,160 92,160" fill="#f3ead8"/><path d="M62.1,90.6 L77.2,66.3 L122,36 L96.6,83.7 L73.9,101.4 Z" fill="#d9a95b" mask="url(#n)"/><polygon points="128,64 146,40 168,40 168,160 146,160 146,70" fill="#f3ead8"/></svg></a>
     <ul>
       <li><a href="#works">الأعمال</a></li>
       <li><a href="#about">عنّي</a></li>
@@ -409,7 +413,7 @@ const SITE = {
 
 <footer>
   <div class="wrap">
-    <div class="logo" data-f="name"></div>
+    <div class="logo"><svg viewBox="30 28 146 140" xmlns="http://www.w3.org/2000/svg"><defs><mask id="ft"><rect width="200" height="200" fill="#fff"/><path d="M122,36 L88.5,77" stroke="#000" stroke-width="2.6" stroke-linecap="round"/><circle cx="87" cy="79" r="4.6" fill="#000"/></mask></defs><rect x="38" y="40" width="22" height="120" rx="2" fill="#f3ead8"/><polygon points="60,104 74,91 118,160 92,160" fill="#f3ead8"/><path d="M62.1,90.6 L77.2,66.3 L122,36 L96.6,83.7 L73.9,101.4 Z" fill="#d9a95b" mask="url(#ft)"/><polygon points="128,64 146,40 168,40 168,160 146,160 146,70" fill="#f3ead8"/></svg></div>
     <p data-f="title"></p>
     <div class="socials" id="socials"></div>
     <p>© <span id="yr"></span> <span data-f="name"></span> — جميع الحقوق محفوظة</p>
@@ -499,7 +503,7 @@ const artOf=(w,i,t,full)=> w.src?`<img src="${full?w.src:thumb(w.src)}" alt="${w
 /* ---------- fill site info ---------- */
 document.querySelectorAll('[data-f]').forEach(el=>el.textContent=SITE[el.dataset.f]||"");
 document.getElementById('yr').textContent=new Date().getFullYear();
-document.getElementById('avatar').innerHTML=SITE.avatar?`<img src="${SITE.avatar}" alt="">`:SITE.shortName;
+document.getElementById('avatar').innerHTML=SITE.avatar?`<img src="${SITE.avatar}" alt="">`:`<svg viewBox="30 28 146 140" xmlns="http://www.w3.org/2000/svg"><defs><mask id="a"><rect width="200" height="200" fill="#fff"/><path d="M122,36 L88.5,77" stroke="#000" stroke-width="2.6" stroke-linecap="round"/><circle cx="87" cy="79" r="4.6" fill="#000"/></mask></defs><rect x="38" y="40" width="22" height="120" rx="2" fill="#f3ead8"/><polygon points="60,104 74,91 118,160 92,160" fill="#f3ead8"/><path d="M62.1,90.6 L77.2,66.3 L122,36 L96.6,83.7 L73.9,101.4 Z" fill="#d9a95b" mask="url(#a)"/><polygon points="128,64 146,40 168,40 168,160 146,160 146,70" fill="#f3ead8"/></svg>`;
 const tk=`https://www.tiktok.com/@${SITE.tiktokUser}`;
 document.getElementById('handleTxt').textContent='@'+SITE.tiktokUser;
 document.getElementById('handleLink').href=tk;
